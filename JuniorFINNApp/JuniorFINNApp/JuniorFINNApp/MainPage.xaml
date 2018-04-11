@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:JuniorFINNApp"
+             x:Class="JuniorFINNApp.MainPage">
+
+    <StackLayout>
+        <StackLayout BackgroundColor="GhostWhite" x:Name="StackLayoutForTop">
+            <Grid Margin="10"  x:Name="GridForTop">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="50" />
+                </Grid.ColumnDefinitions>
+                <Label FontSize="Large" Text="Favorite" Grid.Column="0" />
+                <Switch x:Name="SwitchToShowFavoriteList" Grid.Column="1"></Switch>
+            </Grid>
+        </StackLayout>
+
+        <ScrollView x:Name="ScrollViewForShowingData">
+            <Grid x:Name="GridForPuttingDataIntoTwoColumnss">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                
+            </Grid>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>
